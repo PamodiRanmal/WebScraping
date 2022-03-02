@@ -21,7 +21,7 @@ def ikman_vehicle_details(ad_list_type):
     normal_ads=soup.find_all('li', class_=ad_list_type)
 
     for ad in normal_ads:
-        #Some ads were related are about spare parts and auto services. Those ads do not
+        #Some ads were are about spare parts and auto services. Those ads do not
         #have the attributes like mileage. By default the value of mileage is ''
         mileage = ''
         last_update=''
